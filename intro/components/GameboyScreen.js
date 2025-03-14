@@ -24,7 +24,7 @@ class GameboyScreen extends HTMLElement {
         setTimeout(() => {
           $intro.classList.remove('open');
           setTimeout(() => {
-            window.open('./allGames/index.html', '_self');
+            window.open('./allGames/', '_self');
           }, 500);
         }, 1000);
       } else {

@@ -16,6 +16,17 @@ class GameboyOptionButton extends HTMLElement {
       } else if (this.name === 'START') {
       }
     });
+
+    document.addEventListener('keydown', ({ key }) => {
+      if (key === "Enter") {
+        this.dispatchEvent(
+          new CustomEvent('box-click', {
+            composed: true,
+            bubbles: true
+          })
+        );
+      }
+    })
   }
 
   static get styles() {

@@ -12,6 +12,16 @@
     />
     <link rel="stylesheet" href="intro/styles.css" />
     <script type="module" src="intro/script.js"></script>
+    <script type="speculationrules">
+      {
+        "prerender": [
+        {
+          "source": "list",
+          "urls": ["./allGames/index.html"]
+        }
+      ]
+      }
+    </script>
   </head>
   <body>
     <main class="container">
